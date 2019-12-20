@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
 import CharacterCard from './CharacterCard';
-import { Button } from 'reactstrap';
+
 
 
 export default function CharacterList() {
@@ -22,20 +22,16 @@ export default function CharacterList() {
     })
   }, []);
 
+const characterListStyles = {
+  display: 'flex',
+  flexFlow: 'row wrap'
+}
+
+
+
   return (
-    <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
-
-      {apiData.map(character => {
-        return (
-          <div>
-            <h1>{character.name}</h1>
-              <Button>React Button</Button>
-
-          </div>
-
-          )
-      })}
+    <section style={characterListStyles} className="character-list">
+      {apiData.map(character => <CharacterCard img={character.image} name={character.name} status={character.status} species={character.species} />)}
 
     </section>
   );
