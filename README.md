@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Once the app loads, it doesn't have to refresh or reload during the use of the application. Makes user experience better by making the app quicker and more fluid between pages/actions.
 
 ## Project Set Up
 
@@ -73,16 +73,16 @@ _Add a Router to this application using [React Router](https://reacttraining.com
 
 _Add 'Search by Name' feature._
 
-- [ ]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
-- [ ]  Create a search form that will filter through the data displayed in the character list.
+- [✅]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
+- [✅]  Create a search form that will filter through the data displayed in the character list.
 
 ### **Required best practices:**
 
-- [ ]  Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ]  Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ]  Consistent quotation usage.
-- [ ]  Spell-check.
-- [ ]  Schedule time to review, refine and reassess your work.
+- [✅]  Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [✅]  Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [✅]  Consistent quotation usage.
+- [✅]  Spell-check.
+- [✅]  Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
