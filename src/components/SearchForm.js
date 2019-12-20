@@ -9,7 +9,7 @@ export default function SearchForm(props) {
 
   return (
     <section style={characterSearchStyles} className="search-form">
-    <input  onChange={props.onChange} placeholder='search character' type='text'></input>
+    <input  onChange={props.onChange} placeholder='search:' type='text'></input>
     </section>
   );
 }

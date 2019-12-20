@@ -25,7 +25,7 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ]  Explain benefit(s) using `client-side routing`?
+- [✅]  Explain benefit(s) using `client-side routing`?
 
 > Answer: Once the app loads, it doesn't have to refresh or reload during the use of the application. Makes user experience better by making the app quicker and more fluid between pages/actions.
 
@@ -119,9 +119,9 @@ Complete search component to your list views.
 
 > Follow these steps to complete your project:
 
-- [ ]  Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
-- [ ]  Add your TL as a Reviewer on the Pull Request.
-- [ ]  TL then will count the HW as done by merging the branch into master.
+- [✅]  Submit a Pull Request to merge `<firstName-lastName>` branch into master (student's repo).
+- [✅]  Add your TL as a Reviewer on the Pull Request.
+- [✅]  TL then will count the HW as done by merging the branch into master.
 
 <!-- TLs: NOTE: use resources to coach, or share over zoom - avoid sharing entire solution folder. Share preview links if available. -->
 
