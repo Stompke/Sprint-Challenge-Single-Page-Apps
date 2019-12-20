@@ -2,12 +2,27 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
 import CharacterCard from './CharacterCard';
+import SearchForm from './SearchForm';
 
 
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [apiData, setApiData] = useState([]);
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  useEffect(() => {
+    const results = apiData.filter(character => 
+      character.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+  }, [searchTerm, apiData]);
+
+  const handleChange = event => {
+    setSearchTerm(event.target.value);
+  };
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
@@ -22,6 +37,8 @@ export default function CharacterList() {
     })
   }, []);
 
+
+
 const characterListStyles = {
   display: 'flex',
   flexFlow: 'row wrap'
@@ -29,9 +46,13 @@ const characterListStyles = {
 
 
 
+
+
   return (
     <section style={characterListStyles} className="character-list">
-      {apiData.map(character => <CharacterCard img={character.image} name={character.name} status={character.status} species={character.species} />)}
+      <SearchForm   onChange={handleChange} />
+    {/* <input style={characterSearchStyles} onChange={handleChange} placeholder='search character' type='text'></input> */}
+      {searchResults.map(character => <CharacterCard key={character.id} img={character.image} name={character.name} status={character.status} species={character.species} />)}
 
     </section>
   );
